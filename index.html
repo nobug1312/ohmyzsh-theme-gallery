@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1793d1">
+  <title>Oh My Zsh Theme Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Oh My Zsh Theme Gallery">
+      <span class="brand-mark">❯_</span>
+      <span>zsh<span class="brand-muted">/themes</span></span>
+    </a>
+    <a class="source-link" href="https://github.com/ohmyzsh/ohmyzsh/tree/master/themes" target="_blank" rel="noreferrer">Oh My Zsh ↗</a>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p class="eyebrow">LOCAL THEME EXPLORER</p>
+      <h1>Oh My Zsh themes</h1>
+      <p class="subtitle">Browse real prompts from the bundled Oh My Zsh themes.</p>
+
+      <div class="toolbar">
+        <label class="search">
+          <span aria-hidden="true">⌕</span>
+          <input id="search" type="search" placeholder="Search themes..." aria-label="Search themes" autocomplete="off">
+          <kbd>/</kbd>
+        </label>
+        <div class="toolbar-actions">
+          <div class="segmented" role="group" aria-label="Preview mode">
+            <button class="mode-button active" data-mode="home" type="button">Home</button>
+            <button class="mode-button" data-mode="git" type="button">Git dirty</button>
+          </div>
+          <button id="favorites-toggle" class="filter-button" type="button" aria-pressed="false">☆ Favourites</button>
+        </div>
+      </div>
+      <div class="result-row">
+        <span id="result-count">Loading themes…</span>
+        <span class="preview-note">Sample home directory or modified Git repository.</span>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery" aria-live="polite"></section>
+    <p id="empty-state" class="empty-state" hidden>No matching themes.</p>
+    <footer>
+      <span>Local previews · JetBrains Mono Nerd Font · No external dependencies</span>
+      <a href="https://github.com/ohmyzsh/ohmyzsh/wiki/Themes" target="_blank" rel="noreferrer">Theme documentation ↗</a>
+    </footer>
+  </main>
+</body>
+</html>
