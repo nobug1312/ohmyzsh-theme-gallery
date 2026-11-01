@@ -1,26 +1,18 @@
 # Oh My Zsh Theme Viewer
 
-A lightweight, offline viewer for 143 bundled [Oh My Zsh](https://ohmyz.sh/) themes. Compare home and Git previews, search themes, save favourites, and copy theme settings. Built with vanilla HTML, CSS and JavaScript, with an Arch-inspired interface and bundled JetBrains Mono Nerd Font.
+**Live:** [ohmyzsh-theme.vercel.app](https://ohmyzsh-theme.vercel.app)
 
-## Run
+A visual gallery of every bundled [Oh My Zsh](https://ohmyz.sh/) theme. Each preview is rendered from the theme's real prompt by Zsh, not a static screenshot, so you can see the colours, symbols and Git status before changing `ZSH_THEME`.
 
-From the project directory:
+![Oh My Zsh Theme Viewer](docs/preview.png)
 
-```sh
-python3 -m http.server 8765 --bind 127.0.0.1
-```
+## Highlights
 
-Open **http://localhost:8765**. Viewing requires no Zsh or Oh My Zsh installation.
-
-## Regenerate previews
-
-Requires Python 3.9+, Zsh and Git on Linux or macOS:
-
-```sh
-python3 generate_previews.py
-```
-
-Previews are generated from `vendor/ohmyzsh/themes/` using a temporary home directory and a modified Git repository. Your shell configuration is never changed. Colours and optional plugin output may differ from your terminal; `random` shows a sampled theme.
+- **143 themes** rendered from a pinned Oh My Zsh snapshot
+- **Home and Git-dirty modes** to compare prompts in different contexts
+- **Search, favourites and one-click copy** of the `ZSH_THEME` setting
+- **Arch-inspired interface** set in JetBrains Mono Nerd Font for full icon support
+- **Static and self-contained**: plain HTML, CSS and JavaScript, no build step
 
 ## Attribution
 
