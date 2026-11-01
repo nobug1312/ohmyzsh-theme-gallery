@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ohmyzsh-theme.vercel.app/sitemap.xml
